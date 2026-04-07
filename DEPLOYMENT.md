@@ -57,13 +57,31 @@ git push origin main
 
 ### Step 5: Configure Environment Variables
 
-In the Vercel import screen, under "Environment Variables":
+**IMPORTANT:** Add these variables AFTER the project is created to avoid secret reference errors.
 
-Add the following (copy from your `.env.local`):
+#### If deploying now (during import):
 
+1. On the import screen, click "Environment Variables"
+2. Add each variable manually:
 
+| Key | Value |
+|-----|-------|
+| `VITE_FIREBASE_API_KEY` | `AIzaSyBR871CYdDvPPU5ksNY_qSXHqrC__Azre8` |
+| `VITE_FIREBASE_AUTH_DOMAIN` | `debkanta-study-zone.firebaseapp.com` |
+| `VITE_FIREBASE_PROJECT_ID` | `debkanta-study-zone` |
+| `VITE_FIREBASE_STORAGE_BUCKET` | `debkanta-study-zone.firebasestorage.app` |
+| `VITE_FIREBASE_MESSAGING_SENDER_ID` | `1054125578796` |
+| `VITE_FIREBASE_APP_ID` | `1:1054125578796:web:2937309e2391df495a0f89` |
 
-> ⚠️ **IMPORTANT**: These values will be encrypted by Vercel. They won't be visible in your git repository.
+#### If deployment failed (to fix):
+
+1. Go to your Vercel project dashboard
+2. Click "Settings" → "Environment Variables"
+3. Add each variable from the table above
+4. Go back to "Deployments"
+5. Click the three dots on latest deployment → "Redeploy"
+
+> ⚠️ **IMPORTANT**: These values will be encrypted by Vercel and won't be visible in your git repository.
 
 ### Step 6: Deploy
 
