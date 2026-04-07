@@ -86,7 +86,7 @@ export default function DoubtZone() {
           <div className="dq-subj-tag">MATHEMATICS</div>
           <div className="ans-section">
             <div className="ans-label">ANSWER</div>
-            <p className="ans-text">Use the property that L{f'(t)} = sF(s) - f(0) and apply it systematically...</p>
+            <p className="ans-text">Use the property that L{"{f'(t)}"} = sF(s) - f(0) and apply it systematically...</p>
           </div>
           <span className="badge badge-ans"><i className="fas fa-check"></i> ANSWERED</span>
         </div>
