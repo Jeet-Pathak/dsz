@@ -1,29 +1,17 @@
-<html lang="en"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-<title>DSZ | Debkanta Study Zone</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@300;400;600&amp;family=Unbounded:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-  const firebaseConfig = {
-    apiKey: "AIzaSyBR871CYdDvPPU5ksNY_qSXHqrC__Azre8",
-    authDomain: "debkanta-study-zone.firebaseapp.com",
-    projectId: "debkanta-study-zone",
-    storageBucket: "debkanta-study-zone.firebasestorage.app",
-    messagingSenderId: "1054125578796",
-    appId: "1:1054125578796:web:2937309e2391df495a0f89"
-  };
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-  window.dsz = { db };
-</script>
-<style>
-/* ══════════════════════════════════════════
-   RESET & ROOT
-══════════════════════════════════════════ */
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;600&family=Unbounded:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>DSZ | Debkanta Study Zone</title>
+  </head>
+  <body data-theme="0">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
 html { scroll-behavior:smooth; }
 /* THEME 1: CYBER NOIR (default) */
 :root, [data-theme="0"] {
